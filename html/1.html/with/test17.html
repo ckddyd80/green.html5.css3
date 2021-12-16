@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var name1 = "허니버터";
-        var name2 = "칸쵸";
-        var name3 = "프링글스";
-
-        var a = "1300";
-        var b = "1500";
-        var c = "";
-
-        var name = prompt("사고 싶은 과자는?");
-        
-        if (name == "허니버터"){
-            document.write("1300");
+        // ES5
+        function myFunc1(name) {
+            return name;
         }
-        else if(name == "칸쵸" ) {
-            document.write("1500");
-        } else if(name == "프링글스"){
-            document.write("3000");
+
+        console.log(myFunc1('김하서'));
+
+        // ES6 화살표 함수
+        const myFunc2 = (name) => {
+            return `${name}`;
         }
-        if (a == "돈을 넣지 않았을때")
+
+        console.log(myFunc2('김하서')); 
+
+        // 또는 화살표를 사용하거나 'return' 키워드를 사용하지 않아도 됩니다
+        const myFunc3 = (name) => `${name}`;
+
+        console.log(myFunc3('김하서')); 
     </script>
 </head>
 <body>

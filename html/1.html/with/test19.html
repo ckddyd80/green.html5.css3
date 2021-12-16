@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        // 객체생성1
+        var tv = new Object(); //객체 생성(빈껍데기)
+
+        // 속성 지정은 객체(값)
+        tv.color = "black";
+        tv.size = 50;
+
+        // 매소드(함수) 만들기
+        tv.printInfo = function() {
+            document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+        }
+
+        // 실행(해당객체명 쓰고)
+        tv.printInfo();
+        */
+
+        // 객체 생성은 두가지 방법 (위, 아래) / 객체생성2
+
+        /*
+        var tv = {
+            color: "black",
+            size: 50,
+            printInfo: function() {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+            }
+        };
+
+        tv.printInfo();
+        tv.color = "white";
+        document.write(`<br /> ${tv.color}`);
+        */
+
+        /*
+        var slide = {
+            size: 1200,
+            speed: 2000,
+            clickArrow: function () {
+                document.write(`오른쪽으로 가기`);
+            },
+            fadeInOut: function() {
+                document.write(`페이드 인아웃`);
+                }
+            };
+
+            slide.clickArrow();
+            slide.fadeInOut();
+
+        */
+
+        /*
+        var weather = {
+            degree: 10,
+            wind: 30,
+            degreeShow: function() {
+                document.write(`온도: ${this.degree}`);
+            },
+            windShow: function() {
+                document.write(`바람: ${this.wind}`);
+
+            }
+
+        }
+
+        weather.degreeShow();
+        weather.windShow();
+
+        */
+
+        /*
+        var car = {
+            price: 3500,
+            cc: 3000,
+            pricrCar: function() {
+                document.write(`가격: ${this.price}`);
+            },
+            ccCar: function() {
+                document.write(`cc: ${this.cc}`);
+            }
+
+        }
+
+        car.pricrCar();
+        car.ccCar();
+        */
+
+        // 객체생성 3번째 방법 _ 함수와 객체
+        /*
+        function TV(colorV, sizeV) {
+            this.color =colorV;
+            this.size = sizeV;
+
+            this.printInfo = function() {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+
+            }
+        }
+    
+        var television = new TV("white", 60);
+        television.printInfo();
+
+        var television2 = new TV("black", 50);
+        television2.printInfo();
+        */
+
+        /*
+        function CAR(price, cc) {
+            this.price = price;
+            this.cc = cc;
+
+            this.priceCar = function() {
+                document.write(`가격: ${this.price}, cc: ${this.cc} <br />`);
+            }
+        }
+
+        var autocar = new CAR("5000", 4500);
+        autocar.priceCar();
+
+        var autocar2 = new CAR("3000", 1600);
+        autocar2.priceCar();
+        */
+
+        // 객체생성 4번째 방법 _ 프로토타입
+        /*
+
+        function TV(colorV, sizeV) {
+            this.color =colorV;
+            this.size = sizeV;
+        }
+
+        TV.prototype.printInfo = function() {
+            document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+        }
+
+        TV.prototype.price = 2500;
+
+        var television = new TV("white", 60);
+        television.printInfo();
+        document.write(`${television.price} <br />`);
+
+        var television2 = new TV("black", 50);
+        television2.printInfo();
+        document.write(`${television2.price} <br />`);
+
+        var television3 = new TV("red", 40);
+        television3.printInfo();
+        document.write(`${television3.price} <br />`);
+        */
+
+        /*
+        function CAR(price, cc) {
+            this.price = price;
+            this.cc = cc;
+        }
+
+        CAR.prototype.priceCar = function() {
+            document.write(`가격: ${this.price}, cc: ${this.cc} <br />`);
+        }
+
+        var autocar = new CAR("5000", 4500);
+        autocar.priceCar();
+
+        var autocar2 = new CAR("3000", 1600);
+        autocar2.priceCar();
+        */
+
+        /*
+        var num1 = Number(prompt("숫자 입력", 0));
+        var num2 = Number(prompt("숫자 입력", 0));
+
+        function Calculator(num1, num2) {
+            this.num1 = num1
+            this.num2 = num2
+        }
+        Calculator.prototype.add = function() {
+            var result = this.num1 + this.num2
+            return result;
+        }
+        Calculator.prototype.sub = function() {
+            var result = this.num1 - this.num2
+            return result;
+        }
+        Calculator.prototype.division = function() {
+            var result = this.num1 / this.num2
+            return result;
+        }
+        Calculator.prototype.multiple = function() {
+            var result = this.num1 * this.num2
+            return result;
+        }
+        var calu = new Calculator(num1,num2);
+        
+
+        document.write(`덧셈: ${calu.add()} <br />`);
+        document.write(`뺄셈: ${calu.sub()} <br />`);
+        document.write(`나눗셈: ${calu.division()} <br />`);
+        document.write(`곱셈: ${calu.multiple()} <br />`);
+        */
+
+        // 객체 생성 - es6
+
+        /*
+        class TV {
+            // 생성자
+            constructor(colorV, sizeV) {
+                this.color =colorV;
+                this.size = sizeV;
+            }
+
+            // 메소드
+            printInfo() {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+            }
+
+        }
+
+        class lgTV extends TV {
+            printLG() {
+                document.write(`엘지티비 입니다<br />`);
+            }
+        }
+        class samsungTV extends TV {
+            printsamsung() {
+                document.write(`삼성티비 입니다<br />`);
+            }
+        }
+        
+        let lg = new lgTV("black", 50);
+        let sam = new samsungTV("black", 50);
+
+        lg.printLG();
+        lg.printInfo();
+
+        sam.printsamsung();
+        sam.printInfo();
+        */
+
+        class CAR {
+            constructor(price, cc) {
+                this.price = price;
+                this.cc = cc;
+            }
+            priceCar() {
+                document.write(`가격: ${this.price}, cc: ${this.cc} <br />`);
+            }
+        }
+        class hdCAR extends CAR {
+            priceHD() {
+                document.write(`현대자동차 입니다.<br />`);
+            }
+        }
+
+        class kiaCAR extends CAR {
+            priceKIA() {
+                document.write(`기아자동차 입니다.<br />`);
+            }
+        }
+
+        let hd = new hdCAR("5000", 4500);
+        let kia = new kiaCAR("5000", 4500);
+
+        hd.priceHD();
+        hd.priceCar();
+
+        kia.priceKIA();
+        kia.priceCar();
+        
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var height = prompt("당신의 키는?", "0");
+
+        if(height>=150) {
+            document.write("놀이기구를 이용할 수 있습니다.");
+        } else {
+            var result = confirm("부모와 함께 왔는지 한 번 더 묻는다.");
+            
+            if(result) {
+                document.write("좋은 시간을 보내렴~");
+
+            } else {
+                document.write("어른 모시고 다시 오렴~");
+            
+            
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
