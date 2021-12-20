@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./libarary/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./libarary/fontawesome-free-5.15.4-web/">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libarary/bootstrap-5.1.3-dist/">
 </head>
 <body>
     <header id="main_header">
@@ -56,7 +57,18 @@
             </ul>
         </div>
         <!-- 검색바 -->
-        <div id="search_box"></div>
+        <div id="search_box">
+            <div id="search_bar">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="위치검색" aria-label="위치검색" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div id="current_location">
+                <div>종로 1,2,3,4 가동</div>
+                <div>대한민국</div>
+            </div>
+        </div>
     </header>
     <div id="main_content">
         <div id="main top">
@@ -145,6 +157,7 @@
             </div>
         </div>
     </footer>
+<script src="./libarary/fontawesome-free-5.15.4-web/bootstrap-5.1.3-dist/"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a0154f9845efba36c9b49408b44b9ae8"></script>
 <script src="./js/map.js"></script>
 </body>
