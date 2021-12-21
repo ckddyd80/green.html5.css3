@@ -187,6 +187,7 @@ ul { list-style: none; }
 주의점 : 적용하려는 css속성 밑에다가 작성해 줘야한다
  */
 
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
     #main_header {
         background: url("../img/425x450.jpg");
@@ -224,6 +225,37 @@ ul { list-style: none; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+=======
+ @media screen and (max-width: 767px) {
+     #main_header {
+         background: url("../img/425x450.jpg");
+         background-size: cover;
+     }
+
+     #main_header .gnb, .lnb {
+         width: 90vw;
+     }
+
+     #main_header ul.nav {
+         display: none;
+     }
+
+     #main_header .setting {
+         display: none;
+     }
+
+     #main_header .trigger {
+         display: block;
+     }
+
+     #main_footer > div:nth-child(2) > div {
+         font-size: 11px;
+         text-align: left;
+     }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+>>>>>>> d699f16ca672209c4429dcd2cfc7efae871bbcc2
     #main_header {
         background: url("../img/768x450.jpg");
         background-size: cover;
@@ -233,6 +265,7 @@ ul { list-style: none; }
         width: 90vw;
     }
 
+<<<<<<< HEAD
     #main_header > #search_box > div#search_bar {
         width: 85vw;
     }
@@ -243,6 +276,14 @@ ul { list-style: none; }
 }
 
 @media screen and (min-width: 1024px) {
+=======
+    #main_footer > div:nth-child(2) > div {
+        font-size: 12px;
+    }
+ }
+
+ @media screen and (min-width: 1024px) {
+>>>>>>> d699f16ca672209c4429dcd2cfc7efae871bbcc2
     #main_header {
         background: url("../img/1024x450.jpg");
         background-size: cover;
@@ -251,4 +292,8 @@ ul { list-style: none; }
     #main_header .gnb, .lnb {
         width: 960px;
     }
+<<<<<<< HEAD
 }
+=======
+ }
+>>>>>>> d699f16ca672209c4429dcd2cfc7efae871bbcc2

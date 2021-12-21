@@ -13,13 +13,8 @@
     padding: 15px 0;
 }
 
-##main_content > #main_top div {
+#main_content > #main_top div {
     text-align: center;
-}
-
-#main_content > #main_container > section {
-    width: 730px;
-    float: left;
 }
 
 /* 메인지도(기상레이더) */
@@ -100,3 +95,39 @@
     width: 210px;
     float: right;
 }
+
+@media screen and (max-width: 767px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section > article {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section > #weather_loacation a {
+        width: 100%;
+    }
+
+    #main_content > #main_container > aside {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min_width: 768px) and (max-width: 1023px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section {
+        width: calc(100% - 210px);
+    }
+}
+
+@media screen and (min-width: 1024px) {}
