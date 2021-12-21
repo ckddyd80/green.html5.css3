@@ -7,10 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libarary/fontawesome-free-5.15.4-web/">
 </head>
 <body>
     <header id="main_header">
-        <!-- 로고 -->
+<!-- 로고 -->
         <div class="gnb_container">
             <div class="gnb menu">
                 <div class="logo">
@@ -25,14 +26,33 @@
                     <li><a href="#">문의하기</a></li>
                 </ul>
             </div>
+<!-- 우측메뉴 -->
+            <div class="setting">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fal fa-shopping-bag"></i>></a>
+                <a href="#"><i class="far fa-search"></i></a>
+                <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="trigger">
+                <a href="#" class="mobile hamburger"><i class="fas fa-bars fa-lg"></i></a>
+                <a href="#" class="mobile close"><i class="fas fa-tims fa-lg"></i></a>
+            </div>
         </div>
-        <!-- 검색바 -->
-        <div></div>
-        <!-- nav 메뉴 -->
-        <div></div>
-        <!-- nav 메뉴 우측 -->
-        <div></div>
-        <!-- nav 우측 하위메뉴 -->
+<!-- nav 우측 하위메뉴 -->
+        <div class="lnb_container">
+            <ul class="lnb">
+                <li>로그인</li>
+                <li>간편회원가입</li>
+                <li>마이페이지</li>
+                <li>주문조회</li>
+            </ul>
+            <ul class="lnb">
+                <li>SHOP</li>
+                <li>BRAND</li>
+                <li>EVENT</li>
+                <li>MY PAGE</li>
+            </ul>
+        </div>
     </header>
     <!-- 상단 배너 -->
     <div id="main_content">
@@ -124,6 +144,6 @@
     <footer id="main_footer">
 
     </footer>
-    
+    <script src="./libarary/fontawesome-free-5.15.4-web/"></script>
 </body>
 </html>
