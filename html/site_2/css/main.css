@@ -1,3 +1,18 @@
 @charset "UTF-8";
 
 /* 메인콘텐츠 */
+
+#main_content {
+    background: #d8d8d8;
+    height: 200px;
+}
+
+#main_content > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+/* 서브배너_container */
+
