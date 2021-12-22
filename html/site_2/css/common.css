@@ -13,11 +13,63 @@ ul { list-style: none; }
 /* 헤더 */
 
 #main_header {
-    height: 390PX;
+    height: 60PX;
     background: gray;
     color: white;
 }
 
 #main_header a {
     color: white;
+}
+
+#main_header > .gnb_container {
+    background: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#main_header .gnb {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+#main_header .logo {
+    float: left;
+    width: 190px;
+    margin-top: 12px;
+}
+
+#main_header ul.nav {
+    float: left;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+#main_header ul.nav > li {
+    float: left;
+    padding: 22px 17px;
+}
+
+/* 하위메뉴 */
+#main_header .lnb_container {
+    display: none;
+    background: rgb(34, 34, 34);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 61px;
+    z-index: 1;
+}
+
+#main_header .lnb_container > .lnb {
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+}
+
+#main_header .lnb_container > .lnb >li {
+    float: left;
+    margin: 20px 10px 0 10px;
 }

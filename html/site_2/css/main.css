@@ -4,7 +4,7 @@
 
 #main_content {
     background: #d8d8d8;
-    height: 200px;
+    height: 60px;
 }
 
 #main_content > div {
@@ -14,5 +14,45 @@
     padding: 15px 0;
 }
 
-/* 서브배너_container */
+/* container /자주찾아가는 */
 
+#main_container > #main_section > #main_banner{
+    height: 60px;
+    background: rgb(87, 85, 85);
+    
+}
+
+/* 주요사업 */
+
+#main_container > #main_section > #sub_banner1 {
+    height: 200px;
+    background: red;
+}
+
+/* 보도자료 */
+
+#main_container > #main_section > #sub_banner2 {
+    height: 200px;
+    background: blue;
+}
+
+/* 하단배너 */
+
+#main_container > #main_section > #sub_banner3 {
+    height: 200px;
+    background: rgb(255, 0, 200);
+}
+
+/* 홍보 */
+
+#main_container > #main_section > #sub_banner4 {
+    height: 200px;
+    background: rgb(49, 46, 48);
+}
+
+/* 푸터 */
+
+#main_footer {
+    height: 200px;
+    background: rgb(3, 97, 11);
+}
