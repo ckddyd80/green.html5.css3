@@ -6,7 +6,10 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function( ) {
-
+    $(document).on("mousemove", function (e) {
+        $(".posX").text(e.pageX);
+        $(".posY").text(e.pageY);
+    });
 });
 </script>
 </head>

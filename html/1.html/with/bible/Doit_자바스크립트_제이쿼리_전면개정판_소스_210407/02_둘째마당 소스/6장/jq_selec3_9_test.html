@@ -6,6 +6,11 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function( ){
+	$("#wrap p:eq(2)").after("<p>After</p>");
+	$("<p>insertAfter</p>").insertAfter("#wrap p:eq(1)");
+
+	$("#wrap p:eq(1)").before("<p>Before</p>");
+	$("<p>insertBefore</p>").insertBefore("#wrap p:eq(0");
 
 });
 </script>
