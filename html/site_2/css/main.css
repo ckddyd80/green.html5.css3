@@ -1,58 +1,35 @@
 @charset "UTF-8";
 
-/* 메인콘텐츠 */
-
-#main_content {
-    background: #d8d8d8;
-    height: 60px;
+#main_header {
+    border: 1px solid black;
 }
 
-#main_content > div {
+#main_content > #main_banner {
+    border: 1px solid rgb(241, 6, 6);
+    height: 300px;
     width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 15px 0;
+
 }
 
-/* container /자주찾아가는 */
-
-#main_container > #main_section > #main_banner{
-    height: 60px;
-    background: rgb(87, 85, 85);
-    
+#main_video {
+    width: 500px;
 }
 
-/* 주요사업 */
-
-#main_container > #main_section > #sub_banner1 {
-    height: 200px;
-    background: red;
+#main_content > #main_text {
+    border: 1px solid rgb(35, 216, 59);
 }
 
-/* 보도자료 */
-
-#main_container > #main_section > #sub_banner2 {
-    height: 200px;
-    background: blue;
+#main_content > #sub_banner {
+    border: 1px solid rgb(20, 8, 192);
+    height: 150;
 }
-
-/* 하단배너 */
-
-#main_container > #main_section > #sub_banner3 {
-    height: 200px;
-    background: rgb(255, 0, 200);
-}
-
-/* 홍보 */
-
-#main_container > #main_section > #sub_banner4 {
-    height: 200px;
-    background: rgb(49, 46, 48);
-}
-
-/* 푸터 */
 
 #main_footer {
-    height: 200px;
-    background: rgb(3, 97, 11);
+    border: 1px solid rgb(188, 218, 19);
+}
+
+@media screen and (min-width:760px) {
+    .header {
+        display: none;
+    }
 }

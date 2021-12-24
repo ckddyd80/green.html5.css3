@@ -5,9 +5,23 @@
 <title> 이벤트 </title>  
 <script src="js/jquery.js"></script>
 <script>
-$(function(){
-
+	$(function(){
+	$(".btn_1").on("mouseover", function() {
+		alert("HELLO!");
+	});
+	$(document).on("mouseover", ".btn_2", function() {
+		alert("WELCOME!");
+	});    
+	var btn_2 = $("<p><button class=\"btn_2\">버튼2</button></p>");
+	$("#wrap").append(btn_2);
+	$(".del_1").on("click", function(){
+		$(".btn_1").off("mouseover");
+	});
+	$(".del_2").on("click", function(){
+		$(document).off("mouseover",".btn_2");
+	});
 });
+
 </script>
 </head>
 <body>
