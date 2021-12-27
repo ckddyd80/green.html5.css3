@@ -1,35 +1,133 @@
 @charset "UTF-8";
 
-#main_header {
-    border: 1px solid black;
+/* 메인콘텐츠 */
+
+#main_content {
+    background: #d8d8d8;
 }
 
-#main_content > #main_banner {
-    border: 1px solid rgb(241, 6, 6);
-    height: 300px;
+#main_content > div {
     width: 960px;
-
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
 }
 
-#main_video {
-    width: 500px;
+#main_content > #main_top > #main_video  {
+    text-align: center;
 }
 
-#main_content > #main_text {
-    border: 1px solid rgb(35, 216, 59);
+/* 메인지도(기상레이더) */
+
+#main_content > #main_container > section >  {
+    height: 400px;
+    margin-bottom: 20px;
+    background: white;
 }
 
-#main_content > #sub_banner {
-    border: 1px solid rgb(20, 8, 192);
-    height: 150;
+#main_content > #main_container > section >  {
+    width: 90%;
+    height: 360px;
+    z-index: 0 !important;
+    margin: 0 auto;
 }
 
-#main_footer {
-    border: 1px solid rgb(188, 218, 19);
+/* 메인 콘텐츠 _ 비디오 */
+
+#main_content > #main_container > section >#weather_loacation {
+    height: 400px;
+    margin-bottom: 20px;
+    background: #d8d8d8;
 }
 
-@media screen and (min-width:760px) {
-    .header {
-        display: none;
+#main_content > #main_container > section >#weather_loacation a {
+    display: inline-block;
+    width: calc(50% - 8px); 
+    /* 각각의 a태그에 좌우에 2px씩 margin 값이 있기 때문에 8px를 빼준다 */
+    height: 51px;
+    background: white;
+    margin: 2px;
+    line-height: 51px;
+}
+
+#main_content > #main_container > section >#weather_loacation a span {
+    display: inline-block;
+    font-size: 18px;
+}
+
+#main_content > #main_container > section >#weather_loacation a span:nth-child(1) {
+    width: 60%;
+}
+
+#main_content > #main_container > section >#weather_loacation a span:nth-child(2) {
+    width: 20%;
+}
+
+#main_content > #main_container > section >#weather_loacation a span:nth-child(3) {
+    width: 15%;
+}
+
+#main_content > #main_container > section >#weather_loacation a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 메인 추가기상 예보 */
+
+#main_content > #main_container > section > #weather_add {
+    height: 50px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+
+/* 메인 section  공통 */
+
+#main_content > #main_container > section {
+    width: 730px;
+    float: left;
+}
+
+
+/* 메인 aside  공통 */
+
+#main_content > #main_container > aside {
+    width: 210px;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section > article {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section > #weather_loacation a {
+        width: 100%;
+    }
+
+    #main_content > #main_container > aside {
+        float: none;
+        width: 100%;
+        text-align: center;
     }
 }
+
+@media screen and (min_width: 768px) and (max-width: 1023px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section {
+        width: calc(100% - 210px);
+    }
+}
+
+@media screen and (min-width: 1024px) {}
