@@ -118,6 +118,40 @@ ul { list-style: none; }
     margin: 20px 10px 0 10px;
 }
 
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.appear {
+    animation: fade-in 0.5s;
+}
+
+.disappear {
+    animation: fade-out 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
 /* 검색창 */
 
 #main_header > #search_box {
@@ -182,6 +216,25 @@ ul { list-style: none; }
     text-align: center;
 
 }
+
+/* 모바일 메뉴 */
+
+#mobile_menu {
+    display: none;
+    background: black;
+    color: white;
+    height: calc(100vh -60px);
+    width: 100vw;
+}
+
+#mobile_menu a {
+    color: white;
+}
+
+#mobile_menu > ul {
+    display: block;
+}
+
 
 /* 미디어 쿼리
 주의점 : 적용하려는 css속성 밑에다가 작성해 줘야한다

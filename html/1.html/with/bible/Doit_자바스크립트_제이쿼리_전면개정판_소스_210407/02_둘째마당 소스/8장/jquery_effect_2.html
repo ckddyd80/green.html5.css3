@@ -6,17 +6,17 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
-	$(".btn1").on("click", function( ) {
+	$(".btn1").on("click", function() {
 		$(".txt1").animate({
 			marginLeft:"500px",
 			fontSize:"30px"
 		},
-		2000, "linear", function( ) {
+		2000, "linear", function() {
 			alert("모션 완료!"); 
 		});
 	});
 	
-	$(".btn2").on("click", function( ) {
+	$(".btn2").on("click", function() {
 		$(".txt2").animate({
 			marginLeft:"+=50px"
 		},1000);
