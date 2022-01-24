@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+    margin: 0; padding: 0;
+    font-family: Arial, 'san-serif';
+}
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+#main_section > img {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

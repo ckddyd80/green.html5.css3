@@ -111,7 +111,6 @@ ul { list-style: none; }
 #main_header .lnb_container > .lnb {
     overflow: hidden;
     margin: 0 auto;
-    display: none;
 }
 
 #main_header .lnb_container > .lnb > li {
